@@ -140,11 +140,9 @@ ol {
 .icon-head {
   fill: var(--primary-text-color);
   margin-right: 10px;
-  text-align: center;
+  /* text-align: center; */
 }
-.icon-head:last-child {
-  margin-left: 30px;
-}
+
 /* hero */
 .overlay {
   max-width: 1600px;
@@ -375,14 +373,14 @@ ol {
 .client-list {
   display: flex;
 }
-.client-element:not(:last-child) {
+.client-element-top:not(:last-child) {
   margin-right: 30px;
 }
 .client-element {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border-radius: 4px;
   display: flex;
   align-items: center;
