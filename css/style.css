@@ -19,9 +19,6 @@ body {
 .list {
   list-style: none;
 }
-.page {
-  width: 1600px;
-}
 h1,
 h2,
 h3,
@@ -132,15 +129,18 @@ ol {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.auth-nav .link:hover .icon-head {
+  fill: var(--accent-color);
+}
+.auth-nav .link:focus .icon-head {
+  fill: var(--accent-color);
 }
 .icon-head {
   fill: var(--primary-text-color);
   margin-right: 10px;
   text-align: center;
-}
-.icon-head:hover {
-  /* .icon-head:focus { */
-  fill: var(--accent-color);
 }
 .icon-head:last-child {
   margin-left: 30px;
@@ -203,7 +203,7 @@ ol {
 .buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .buttons-element {
   margin-right: 8px;
@@ -388,16 +388,24 @@ ol {
   align-items: center;
   justify-content: center;
 }
-.client-pictchers:hover {
+.client-element:hover {
+  border: 1px solid #2196f3;
+}
+.client-element:hover .client-pictchers {
   fill: var(--accent-color);
 }
-.client-pictchers:hover {
+.client-element:focus {
+  border: 1px solid #2196f3;
+}
+.client-element:focus .client-pictchers {
   fill: var(--accent-color);
 }
 
 .client-pictchers {
   fill: #afb1b8;
+  margin: 16px 32px;
 }
+
 /* footer */
 .footer {
   background: #2f303a;
